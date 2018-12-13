@@ -1,0 +1,186 @@
+@font-face {
+  font-family: "Bold";
+  src: url("../fonts/AirbnbCereal-Bold.ttf"); }
+@font-face {
+  font-family: "Medium";
+  src: url("../fonts/AirbnbCereal-Medium.ttf"); }
+@font-face {
+  font-family: "Book";
+  src: url("../fonts/AirbnbCereal-Book.ttf"); }
+* {
+  font-family: 'Book'; }
+
+html body {
+  margin: 0px;
+  font-size: 100%; }
+  html body .logo {
+    max-width: 200px;
+    margin-top: 8px;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out; }
+    html body .logo:hover {
+      opacity: .9; }
+  html body .container {
+    width: 86rem; }
+  html body header {
+    padding: 30px 0px; }
+    html body header nav ul {
+      margin: 0px;
+      padding: 0px;
+      list-style-type: none; }
+      html body header nav ul li {
+        margin: 0px 24px;
+        padding: 0px;
+        display: inline-block; }
+        html body header nav ul li a {
+          text-decoration: none;
+          color: #000;
+          font-family: 'Bold'; }
+  html body .btn {
+    color: #fff;
+    background: #147eff;
+    padding: 12px 48px;
+    border-radius: 6px;
+    border: 1px solid #147eff;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    cursor: pointer; }
+    html body .btn.btn--outline {
+      background: transparent;
+      color: #147eff;
+      border: 1px solid #147eff; }
+      html body .btn.btn--outline:hover {
+        color: #fff;
+        background: #147eff; }
+    html body .btn:hover {
+      background: transparent;
+      color: #147eff;
+      border: 1px solid #147eff; }
+  html body .outer-container {
+    margin: 0px 2vw;
+    position: relative; }
+    html body .outer-container::after {
+      content: '';
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4); }
+    html body .outer-container .row {
+      position: relative;
+      z-index: 2;
+      min-height: 80vh; }
+  html body .masthead {
+    margin-bottom: 60px; }
+  html body h1 {
+    font-size: 72px;
+    font-family: 'Bold'; }
+  html body h2 {
+    font-size: 48px;
+    font-family: 'Bold'; }
+  html body h4 {
+    font-size: 26px;
+    font-family: 'Bold'; }
+  html body h5 {
+    font-family: 'Book';
+    font-size: 24px;
+    line-height: 1.4; }
+  html body .side {
+    margin-top: 30px;
+    position: relative; }
+    html body .side::after {
+      position: absolute;
+      left: -20px;
+      top: 20px;
+      height: 110%;
+      content: '';
+      width: 1px;
+      background: #fff; }
+  html body ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px; }
+    html body ul li {
+      font-size: 20px;
+      line-height: 32px;
+      font-family: 'Medium'; }
+  html body p {
+    font-size: 20px; }
+  html body .text--white {
+    color: #fff; }
+  html body .text--light {
+    font-family: 'Book'; }
+  html body .text--bold {
+    font-family: 'Bold'; }
+  html body .text--primary {
+    color: #147eff; }
+  html body .text--medium {
+    font-family: 'Medium'; }
+  html body .bg--primary {
+    background: #147eff; }
+  html body .bg--charcoal {
+    background: #2a2a2a; }
+  html body .padding {
+    padding: 3vw 0px; }
+  html body .callout-box {
+    margin: 24px auto; }
+    html body .callout-box h2 {
+      margin: 0px; }
+    html body .callout-box p {
+      margin: 0px; }
+  html body .card {
+    background: #fff;
+    width: 85%;
+    padding: 40px 20px 40px;
+    display: block;
+    border-radius: 6px;
+    height: 240px;
+    position: relative;
+    margin: 20px 0px;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    cursor: pointer; }
+    html body .card:hover {
+      box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.4);
+      -webkit-box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.4); }
+    html body .card h4 {
+      font-size: 20px;
+      margin: 0px 0px; }
+    html body .card p {
+      font-size: 16px; }
+    html body .card .learn-more {
+      margin-bottom: 0px;
+      position: absolute;
+      bottom: 20px;
+      right: 20px; }
+    html body .card.card--outline {
+      border: 1px solid #fff;
+      background: transparent; }
+  html body .process-block h4 {
+    margin-bottom: 0px; }
+  html body .process-block p {
+    margin-top: 4px; }
+  html body .process-block .box {
+    margin: 40px 0px;
+    max-width: 90%; }
+
+.jarallax {
+  position: relative;
+  z-index: 0; }
+
+.jarallax > .jarallax-img {
+  position: absolute;
+  object-fit: cover;
+  /* support for plugin https://github.com/bfred-it/object-fit-images */
+  font-family: 'object-fit: cover;';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; }
